@@ -7,6 +7,7 @@ class Ninja:
         self.kick1 = 20
         self.speed = 5
         self.health = 100
+        self.potion1 = 15
     
     def show_stats( self ):
         print(f"Name: {self.name}\nStrength: {self.strength}\nSpeed: {self.speed}\nHealth: {self.health}\n")
@@ -17,4 +18,8 @@ class Ninja:
     
     def kick(self, pirate):
         pirate.health -= self.kick1
+        return self
+    
+    def potion(self):
+        self.health += self.potion1
         return self
