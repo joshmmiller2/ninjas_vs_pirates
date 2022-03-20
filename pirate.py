@@ -8,6 +8,7 @@ class Pirate:
         self.speed = 3
         self.health = 100
         self.potion1 = 15
+        self.knockout1 = 10000
 
     def show_stats( self ):
         print(f"Name: {self.name}\nStrength: {self.strength}\nSpeed: {self.speed}\nHealth: {self.health}\n")
@@ -15,10 +16,13 @@ class Pirate:
     def punch ( self , ninja ):
         ninja.health -= self.punch1
         return self
-    def kick(self, pirate):
-        pirate.health -= self.kick1
+    def kick(self, ninja):
+        ninja.health -= self.kick1
         return self
     def potion(self):
         self.health += self.potion1
+        return self
+    def knockout(self, ninja):
+        ninja.health -= self.knockout1
         return self
 
