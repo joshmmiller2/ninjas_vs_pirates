@@ -1,3 +1,8 @@
+#Use the starter code to make a RPG battle game between ninjas and pirates.
+#Customize the attack methods on both the Ninja and Pirate class.
+#Have an instance of a ninja and pirate battle it out until one's health is depleted.
+#Ninja Bonus: Use Inheritance, Class Methods, and Static Methods within your code.
+
 from ninja import Ninja
 from pirate import Pirate
 
@@ -5,9 +10,9 @@ michelangelo = Ninja("Michelangelo")
 
 jack_sparrow = Pirate("Jack Sparrow")
 
-michelangelo.attack(jack_sparrow)
+michelangelo.punch(jack_sparrow)
 jack_sparrow.show_stats()
-jack_sparrow.attack(michelangelo)
+jack_sparrow.punch(michelangelo)
 michelangelo.show_stats()
-michelangelo.attack2(jack_sparrow)
+michelangelo.kick(jack_sparrow)
 jack_sparrow.show_stats()

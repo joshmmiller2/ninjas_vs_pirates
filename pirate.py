@@ -9,10 +9,10 @@ class Pirate:
     def show_stats( self ):
         print(f"Name: {self.name}\nStrength: {self.strength}\nSpeed: {self.speed}\nHealth: {self.health}\n")
 
-    def attack ( self , ninja ):
+    def punch ( self , ninja ):
         ninja.health -= self.strength
         return self
-    def attack2(self, ninja):
+    def kick(self, pirate):
         pirate.health -= self.strength
         return self
 
